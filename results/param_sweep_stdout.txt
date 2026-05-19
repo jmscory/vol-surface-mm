@@ -1,0 +1,35 @@
+Cross-feed tuple ranking (screen: tuning_survived=True on every feed; rank by worst_total_pnl, profitable_count, median_total_pnl, worst_max_drawdown, median_var_capture)
+row_count=96 strict_survived_rows=32 tuning_survived_rows=96 profitable_rows=32 tuple_count=24 candidate_tuples=24
+Top cross-feed tuples
+kelly=0.15 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-154.73 profitable_feeds=1/4 median_pnl=-73.19 worst_dd=288.04 median_var_capture=-0.8264 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-154.73 profitable_feeds=1/4 median_pnl=-73.19 worst_dd=288.04 median_var_capture=-0.8264 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-154.73 profitable_feeds=1/4 median_pnl=-73.19 worst_dd=288.04 median_var_capture=-0.8264 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-154.73 profitable_feeds=1/4 median_pnl=-73.19 worst_dd=288.04 median_var_capture=-0.8264 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-171.88 profitable_feeds=1/4 median_pnl=-73.18 worst_dd=281.73 median_var_capture=-0.8808 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-171.88 profitable_feeds=1/4 median_pnl=-73.18 worst_dd=281.73 median_var_capture=-0.8808 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-171.88 profitable_feeds=1/4 median_pnl=-73.18 worst_dd=281.73 median_var_capture=-0.8808 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.15 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-171.88 profitable_feeds=1/4 median_pnl=-73.18 worst_dd=281.73 median_var_capture=-0.8808 real_aapl_pnl=-20.38 all_tuning_survived=True
+kelly=0.10 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.10 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-184.10 profitable_feeds=1/4 median_pnl=-97.41 worst_dd=326.77 median_var_capture=-0.9043 real_aapl_pnl=-37.74 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-187.89 profitable_feeds=2/4 median_pnl=-8.23 worst_dd=251.06 median_var_capture=-0.8505 real_aapl_pnl=-57.92 all_tuning_survived=True
+
+Best cross-feed tuple
+kelly=0.15 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-154.73 profitable_feeds=1/4 median_pnl=-73.19 worst_dd=288.04 median_var_capture=-0.8264 real_aapl_pnl=-20.38 all_tuning_survived=True
+No tuple achieved profitability on every feed.
+
+Legacy best single row by var_capture with drawdown tiebreaker
+feed=gbm kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 var_capture=-0.0406 total_pnl=-187.89 max_dd=251.06 limit=491.84 tuning_survived=True profitable=False
+legacy_tied_best_rows=4

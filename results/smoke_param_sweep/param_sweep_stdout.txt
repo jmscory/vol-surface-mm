@@ -1,0 +1,19 @@
+Cross-feed tuple ranking (screen: tuning_survived=True on every feed; rank by worst_total_pnl, profitable_count, median_total_pnl, worst_max_drawdown, median_var_capture)
+row_count=32 strict_survived_rows=24 tuning_survived_rows=32 profitable_rows=24 tuple_count=8 candidate_tuples=8
+Top cross-feed tuples
+kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.005 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.20 stress_guard=2.50 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.00 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+kelly=0.05 gamma_target=0.010 tail_trigger=0.30 stress_guard=2.50 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+
+Best cross-feed tuple
+kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 worst_pnl=-1.39 profitable_feeds=3/4 median_pnl=6.51 worst_dd=1.39 median_var_capture=-0.0179 real_aapl_pnl=17.47 all_tuning_survived=True
+No tuple achieved profitability on every feed.
+
+Legacy best single row by var_capture with drawdown tiebreaker
+feed=real_aapl kelly=0.05 gamma_target=0.005 tail_trigger=0.20 stress_guard=2.00 var_capture=-0.0138 total_pnl=17.47 max_dd=0.00 limit=274.98 tuning_survived=True profitable=True
+legacy_tied_best_rows=8

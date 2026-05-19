@@ -1,0 +1,73 @@
+{
+  "run_metadata": {
+    "seed": 42,
+    "steps": 252,
+    "backend": "sabr",
+    "timestamp": "2026-04-28T12:26:47.146954+00:00"
+  },
+  "per_feed": {
+    "gbm": {
+      "total_pnl": -187.89274237621774,
+      "var_capture": -0.04060824135851179,
+      "max_drawdown": 251.05599087059062,
+      "gamma_pnl": -134.8831218964407,
+      "theta_pnl": 0.41855607122063865,
+      "hedge_error_kurtosis": 52.91466608645067,
+      "surface_rmse": 0.0027188064284167065,
+      "survived": false
+    },
+    "bates": {
+      "total_pnl": 53.731746099469945,
+      "var_capture": -1.0873825512524558,
+      "max_drawdown": 166.8590703547652,
+      "gamma_pnl": 102.10048314085745,
+      "theta_pnl": 1.2154124598594813,
+      "hedge_error_kurtosis": 7.640507355857242,
+      "surface_rmse": 0.005258217144435378,
+      "survived": true
+    },
+    "rough": {
+      "total_pnl": 41.45449729197399,
+      "var_capture": -0.6135327324786597,
+      "max_drawdown": 54.511787837557506,
+      "gamma_pnl": -21.241971038421134,
+      "theta_pnl": 0.2300384293201402,
+      "hedge_error_kurtosis": 15.488543511386446,
+      "surface_rmse": 0.006972616211033018,
+      "survived": true
+    }
+  },
+  "stress_scenarios": [
+    {
+      "name": "rough_spot_-30_vol_-5",
+      "pnl": -3208.64959265148,
+      "dominant_risk": "gamma"
+    },
+    {
+      "name": "rough_spot_-30_vol_-3",
+      "pnl": -3206.3450702305527,
+      "dominant_risk": "gamma"
+    },
+    {
+      "name": "rough_jump_-30",
+      "pnl": -3202.629647632015,
+      "dominant_risk": "gamma"
+    },
+    {
+      "name": "rough_spot_-30_vol_0",
+      "pnl": -3202.629647632015,
+      "dominant_risk": "gamma"
+    },
+    {
+      "name": "bates_jump_-30",
+      "pnl": -2359.1253477332393,
+      "dominant_risk": "gamma"
+    }
+  ],
+  "surface_diagnostics": {
+    "atm_vol_stability": 0.08510856038772498,
+    "skew_stability": 0.004945769462425899,
+    "calendar_violations": 0,
+    "butterfly_violations": 0
+  }
+}

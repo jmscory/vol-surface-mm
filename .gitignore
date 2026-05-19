@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+coverage.xml
+*.log
+*.tmp
+
+.venv/
+.DS_Store
+.env
+.env.*
+
+*.toml
+!pyproject.toml
+
+# Cached external datasets fetched at runtime
+src/vol_surface_mm/data/cache/
+data/cache/

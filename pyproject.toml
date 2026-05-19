@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vol-surface-mm"
+version = "0.1.0"
+description = "Self-contained options market-making simulator with SABR/spline vol surface, inventory-aware quoting, and stress scenarios."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "James Cory" }]
+keywords = ["options", "market-making", "volatility-surface", "SABR", "quantitative-finance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: Free for non-commercial use",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "pandas>=2.1",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "hypothesis>=6.100",
+    "ruff>=0.6",
+    "certifi>=2024.0",
+]
+plot = [
+    "matplotlib>=3.8",
+]
+
+[project.scripts]
+vol-surface-mm = "vol_surface_mm.cli:main"
+
+[project.urls]
+Repository = "https://github.com/jmscory/vol-surface-mm"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vol_surface_mm"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+extend-exclude = [".venv", "results", ".hypothesis", ".pytest_cache"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "E501",   # line length (formatter handles)
+    "B008",   # function call in default argument (used for dataclass defaults)
+    "SIM108", # ternary suggestion can hurt readability
+    "RUF002", # ambiguous unicode in docstrings (math uses α, ρ, ν, β intentionally)
+    "RUF003", # ambiguous unicode in comments (same reason)
+    "RUF046", # int(...) cast, kept for explicitness in numerical code
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+"src/vol_surface_mm/cli.py" = ["B008"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-q"
